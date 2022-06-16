@@ -1,0 +1,17 @@
+version:  0.2
+
+phases:
+  install:
+    runtime-versions:
+      Java: "openjdk-8"
+    commands:
+      - echo "installing Java version 8"
+  pre_build:
+    commands:
+      - echo "entering build stage running"
+  build:
+    commands:
+     - mvn clean install
+  post_build:
+    commands:
+     - echo "build complete"
