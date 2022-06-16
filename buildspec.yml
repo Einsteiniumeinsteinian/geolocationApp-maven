@@ -3,7 +3,7 @@ version:  0.2
 phases:
   install:
     runtime-versions:
-      Java: "openjdk-8"
+      java: "openjdk-8"
     commands:
       - echo "installing Java version 8"
   pre_build:
