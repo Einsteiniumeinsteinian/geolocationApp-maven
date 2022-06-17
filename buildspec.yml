@@ -1,17 +1,19 @@
-version:  0.2
+version: 0.2
 
 phases:
   install:
     runtime-versions:
       java: corretto8
-    commands:
-      - echo "installing Java version 8"
-  pre_build:
-    commands:
-      - echo "entering build stage running"
   build:
     commands:
-     - mvn clean install
+      - echo Build started on `date`
+      - mvn test 
   post_build:
     commands:
-     - echo "build complete"
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/my-app-1.0-SNAPSHOT.jar
+    - appspec.yml
+  discard-paths: yes
