@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /geostore.war
-    destination: /home/ubuntu/server
+    destination: /opt/tomcat10/webapps
 
 permissions:
   - object: /
