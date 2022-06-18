@@ -24,4 +24,4 @@ hooks:
     - location: stop_server.sh
       timeout: 200
       runas: ubuntu
-  file_exists_behavior: OVERWRITE    
+  # file_exists_behavior: OVERWRITE    
