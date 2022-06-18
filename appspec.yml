@@ -16,10 +16,6 @@ hooks:
     - location: clear_server.sh
       timeout: 300
       runas: ubuntu
-  AfterInstall:
-    - location: change_permission.sh
-      timeout: 300
-      runas: ubuntu
   ApplicationStart:
     - location: start_server.sh
       timeout: 200
