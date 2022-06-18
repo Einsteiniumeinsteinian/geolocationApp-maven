@@ -18,7 +18,7 @@ phases:
      - echo "build complete"
 artifacts:
   files:
-    - src/web/app/target/*.war
+    - src/target/*.war
     - scripts/*.sh
     - appspec.yml
   discard-paths: yes
