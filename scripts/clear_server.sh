@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo rm -rf /opt/tomcat/webapps/*
+sudo rm -rf /var/lib/tomcat/webapps
