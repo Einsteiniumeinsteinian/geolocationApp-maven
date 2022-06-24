@@ -16,6 +16,10 @@ hooks:
     - location: clear_server.sh
       timeout: 300
       runas: ec2-user
+  AfterInstall:
+    - location: unzipfile.sh
+      timeout: 300
+      runas: ec2-user
   ApplicationStart:
     - location: start_server.sh
       timeout: 200
